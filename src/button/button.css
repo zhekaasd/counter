@@ -1,0 +1,32 @@
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+.changedStyle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(222,222,222, .8);
+    color: rgba(0, 0, 0, .5);
+    border: 2px solid rgb(69, 69, 69);
+}
+
+.changedStyle:hover {
+    border: 2px solid black;
+    background: rgba(222,222,222, .8);
+    color: rgba(0, 0, 0, 1);
+    scale: 1.05;
+}
+
+.changedStyle:active {
+    scale: .9;
+}
+
+.changedStyle:disabled {
+    border: none;
+    background: rgba(222,222,222, .4);
+}

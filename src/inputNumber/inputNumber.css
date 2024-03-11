@@ -1,0 +1,31 @@
+.input {
+    margin: 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input label {
+    color: black;
+    font-weight: 600;
+}
+
+.input input {
+    padding: .5rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.input input:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: rgb(212, 212, 212);
+}
+
+.error {
+    background: rgb(255, 203, 203) !important;
+    border-bottom: 2px solid rgb(158, 0, 0) !important;
+    color: red;
+}

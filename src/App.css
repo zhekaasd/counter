@@ -1,38 +1,117 @@
+body {
+  background: url('./sss.jpg');
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.display {
+}
+
+.display h1 {
+  margin: 0.5rem 1rem 0;
+}
+
+.counterWrapper {
+  width: 400px;
+  position: relative;
+  margin-top: 300px;
+  background-color: rgba(222, 222, 222, .6);
+  border-radius: 1rem;
+}
+
+.btnBlock {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.counterWrapperStop {
+  border: 2px solid rgba(206, 25, 25, 0.6);
+}
+
+.stop {
+  color: red;
+}
+
+.inputValue {
+  margin: 22px 0;
+}
+
+.counterWrapper button {
+  margin-bottom: 10px;
+}
+
+.circleWrapper {
+  margin: 50px;
+}
+
+.circleWrapper {
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.num {
+  position: absolute;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numStop {
+  color: #ffdddd;
+}
+
+.circleWrapper svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.circleWrapper svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 8;
+  transform: translate(5px, 5px);
+}
+
+.circleWrapper svg circle:nth-child(2) {
+  stroke: black;
+  stroke-dasharray: 440;
+}
+
+.settingsIcon {
+
+  color: rgb(53, 53, 53);
+  cursor: pointer; 
+  margin: 1.5rem 0;
+  font-size: 2rem; 
+}
+
+.settingsIcon:hover {
+  color: black;
+  transition: .3s;
+  transform: rotate(90deg);
+}
+
+.circleWrapperError svg circle:nth-child(1) {
+  fill: rgb(123, 12, 12) !important;
+}
+
+.circleWrapperError svg circle:nth-child(2) {
+  stroke: red !important;
 }
