@@ -24,7 +24,6 @@ const InputNumber: React.FC<InputNumberPropsType> = ({ value, onChangeInput, onC
     <div className='input'>
         <label> {title} </label>
         <input className={value === min || value === max ? 'error' : ''} type="number" value={value} onChange={onChanged} min={min} max={max} />
-        {/* <input className={value === min || value === max ? 'error' : ''} type="number" value={v} onChange={(e) => setV(+e.currentTarget.value)} min={min} max={max} /> */}
     </div>
   )
 }

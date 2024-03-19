@@ -10,12 +10,7 @@ body {
   z-index: 2;
 }
 
-.display {
-}
 
-.display h1 {
-  margin: 0.5rem 1rem 0;
-}
 
 .counterWrapper {
   width: 400px;
@@ -23,6 +18,17 @@ body {
   margin-top: 300px;
   background-color: rgba(222, 222, 222, .6);
   border-radius: 1rem;
+}
+
+.counterWrapperStop {
+  border: 2px solid rgba(206, 25, 25, 0.6);
+}
+
+.display {
+}
+
+.display h1 {
+  margin: 1rem 1rem 0;
 }
 
 .btnBlock {
@@ -33,65 +39,12 @@ body {
   padding: 1rem 0;
 }
 
-.counterWrapperStop {
-  border: 2px solid rgba(206, 25, 25, 0.6);
-}
-
 .stop {
   color: red;
 }
 
-.inputValue {
-  margin: 22px 0;
-}
-
 .counterWrapper button {
   margin-bottom: 10px;
-}
-
-.circleWrapper {
-  margin: 50px;
-}
-
-.circleWrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.num {
-  position: absolute;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  
-}
-
-.numStop {
-  color: #ffdddd;
-}
-
-.circleWrapper svg {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  transform: rotate(270deg);
-}
-
-.circleWrapper svg circle {
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke: black;
-  stroke-width: 8;
-  transform: translate(5px, 5px);
-}
-
-.circleWrapper svg circle:nth-child(2) {
-  stroke: black;
-  stroke-dasharray: 440;
 }
 
 .settingsIcon {
@@ -106,12 +59,4 @@ body {
   color: black;
   transition: .3s;
   transform: rotate(90deg);
-}
-
-.circleWrapperError svg circle:nth-child(1) {
-  fill: rgb(123, 12, 12) !important;
-}
-
-.circleWrapperError svg circle:nth-child(2) {
-  stroke: red !important;
 }
